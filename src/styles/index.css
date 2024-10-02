@@ -1,0 +1,363 @@
+@import './global.css';
+@import './reset.css';
+
+body {
+    font-family: var(--font-primary);
+}
+
+main {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.centered{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    padding: 0rem 12.5rem;
+    background-color: var(--grey-5);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.header h1 {
+    color: var(--grey-1);
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.7875rem;
+}
+
+.header nav ul  {
+    display: flex;
+    gap: 35px;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--grey-3);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.header a:focus {
+    color: var(--grey-1);
+}
+
+.aboutme-section {
+    display: flex;
+    justify-content: space-between;
+    height: 40.75rem;
+    background-color: var(--grey-am);
+    padding: 6.125rem 0rem 6.125rem 12.5rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 37.9375rem;
+    gap: 1.875rem;
+}
+
+.aboutme-img-title {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+    color: var(--grey-2);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.aboutme-title-secondary h2 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 2.375rem;
+    line-height: 2.9688rem;
+    color: var(--grey-1);
+}
+
+.aboutme-description p {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 33.625rem;
+    line-height: 1.75rem;
+    color: var(--grey-3);
+}
+
+.banner {
+    margin-top: -6.125rem;
+}
+
+.link-projects {
+    display: flex;
+    align-items: center;
+    gap: 15px;  
+}
+
+.link-projects a {
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    color: #fff;
+    background-color: var(--color-primary);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.21rem;
+    padding: 0.7rem 2rem;
+}
+
+.link-projects a:hover {
+    background: var(--color-primary-50);
+    transition: 0.5s;
+    border: 2px solid var(--color-primary-50);
+}
+
+.icons {
+    margin-top: 1.875rem;
+}
+
+#projects {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--grey-5);
+    padding: 6.125rem 0rem 6.125rem 12.5rem;
+    border-top: 3px solid #F8E5F3;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.projects_title  {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.7875rem;
+    color: var(--grey-1);
+}
+
+.projects_text  {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: var(--grey-3);
+}
+
+.span_name {
+    color: var(--color-tertiary);
+}
+
+.project_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    margin-top: 6.25rem;
+}
+
+.project_item{
+    width: 46.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project_item-info{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.project_item-title {
+    font-family:var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: var(--grey-1);
+}
+
+.project_language{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.project_language-title {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.0588rem;
+    color: var(--grey-3);
+}
+
+.project_language-type {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    background-color: var(--grey-am);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: var(--grey-3);
+}
+
+.project_info {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--grey-3);
+}
+
+.project_link{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.project_language-icon {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--grey-3);
+}
+
+.project_language-icon:hover {
+    cursor: pointer;
+}
+
+.newPost{
+    color: var(--grey-1);
+    background-color: var(--color-primary-50);
+    font-size: 0.75rem;
+    padding: 0.4375rem 0.625rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.tech-section {
+    background-color: var(--grey-am);
+}
+
+.tech {
+    display: flex;
+    gap: 37.5rem;
+    padding: 6.125rem 0rem 6.125rem 12.5rem;
+}
+
+.tech-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    width: 25.9375rem;
+}
+
+.tech-title h2 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: var(--grey-1);
+}
+
+.tech-title p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: var(--grey-3);
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+}
+
+.contact-section ul {
+    display: flex;
+    width: 27.4375rem;
+    height: 30.4375rem;
+    flex-direction: column;
+    gap: 6.25rem;
+    align-items: center;
+}
+
+.contact-section li {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.contact-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-infos h2 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.4625rem;
+    color: var(--grey-1);
+}
+
+.contact-infos p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: var(--grey-3);
+}
+
+.contact-infos a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: var(--grey-1);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 12.5rem;
+    height: 10.625rem;
+    background-color: var(--grey-5);
+    border-bottom: 8px solid var(--grey-am)
+}
+
+.footer-itens {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.footer-text h2 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 28.6px;
+    color: var(--grey-1);
+}
+
+.footer-text p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: var(--grey-3);
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1.25rem;
+}
